@@ -35,8 +35,15 @@ commandes:
 9- git commit -m "add comment to remember what is the commit for or what's the update" : commande pour savaugarder nouveau version
 
 10- git checkout NOM_COMMIT : pour retourner to tge previous savaugarde
+   
+  // we can say that git have tree zones: local zone //staging zone // zone head or savaugard or commit zone
+  // git reset has 3 flags --hard or --soft or --mixed
+11- git reset NOM_COMMIT OR git reset --mixed NOM_COMMIT : (remove the current version from the commit and from the staging zone. les fechier reste les méme)
+    --hard NOM_COMMIT : distructife return definitf no coming back again(suprimer de liste de savaugarde et de fichier locaux ajouter dans la commit)
+    --soft NOM_COMMIT : remove the version only from the commit, stay on the staging zone
 
-11- git reset --hard NOM_COMMIT : pour restaurer une fois pour tout une ancient commit 
-
-we can say that git have tree zones: local zone //staging zone // zone head or savaugard
+12- BRANCHE
+      git branch : affiche la branche actuelle
+      git branch nom_branch : creer une nouvelle branch
+      git switch nom_dune_branch-exictent : changer la branche ou tu travaille
 -->
